@@ -1,0 +1,22 @@
+<div class="card_container">
+<div class="bg_card"></div>
+<div class="card" id="{{ card_id }}">
+  <div class="title">
+    <div class="name"><b>{{card.name}}</b></div>
+    <div class="mana-cost" [innerHTML]="manaCost"></div>
+  </div>
+  <div class="picture"></div>
+  <div class="type-line">
+    <div class="type">{{card.type_line}}</div>
+    <div class="rarity {{card.rarity}}"></div>
+  </div>
+  <div class="desc-box">
+    <div class="vertical-align">
+      <div *ngIf="card.oracle_text" class="oracle_text" [innerHTML]="oracleText" ></div>
+      <div *ngIf="card.flavor_text" class="flavor_text">{{card.flavor_text}}</div>
+    </div>
+  </div>
+  <div *ngIf="card.power" class="power_loyalty">{{card.power}}/{{card.toughness}}</div>
+  <div *ngIf="card.loyalty" class="power_loyalty">{{card.loyalty}}</div>
+</div>
+</div>
