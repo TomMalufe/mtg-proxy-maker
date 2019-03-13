@@ -1,22 +1,23 @@
-# MtgProxyMaker
+# MtgProxyMaker (WIP)
+
+This project is meant for personal use and in a way is just a learning experience as I play with the Angular and TypeScript.
+
+It is still very much a work in progress with the end goal of creating something similar to http://www.mtgpress.net/ The difference being that I will not use any of the card images in the end, instead creating a simplified (and printer friendly) version of the cards.
+
+Currently I've only created the standard [layout](https://scryfall.com/docs/api/layouts) card frame, but I plan to create a template for at least 4 other card frame layouts.
+I always intended to use other sites to create deck, such as http://tappedout.net/ and so I'm not planning to add much in the way of deck building functionality here.  Although I do plan to add a way to quickly get all the cards of a given set.
+One big thing I plan to add, but have yet to investigate how I will do it, is a way to export the cards to a printable PDF (like on MTGPress).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
-It is still very much a work in progress with the end goal of creating "low ink" MTG Proxies similar to http://www.mtgpress.net/ except without any card art.  Just the basic info.
 
 ## Development server
+
+If you would like to see this working for yourself, you will need to do the following.
 
 For the backend, use [json-server](https://github.com/typicode/json-server) along with the [Scryfall Oracle Cards](https://archive.scryfall.com/json/scryfall-oracle-cards.json) json file.
 
 Then, run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Well, I didn't really add any unit tests because this was just for me.
